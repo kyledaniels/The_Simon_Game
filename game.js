@@ -27,8 +27,11 @@ $(".btn").click(function() {
   
     userClickedPattern.push(userChosenColour);
   
-    console.log(userClickedPattern);
-  
+     console.log(userClickedPattern);
+
+    playSound(userChosenColour);
+    animatePress(userChosenColour);
+    checkAnswer(userClickedPattern.length-1);
   });
 
 //Create a new function called nextSequence

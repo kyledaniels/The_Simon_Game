@@ -14,7 +14,7 @@ $(".btn").click(function() {
   
     userClickedPattern.push(userChosenColour);
   
-    //console.log(userClickedPattern);
+    console.log(userClickedPattern);
   
   });
 

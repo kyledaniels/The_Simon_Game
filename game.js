@@ -6,6 +6,9 @@ var buttonColours = ["red", "blue", "green", "yellow"];
 var gamePattern = [];
 var userClickedPattern = [];
 
+var started = false;
+var level = 0;
+
 // Select button and create a callback function
 // to determine which button is being clicked.
 $(".btn").click(function() {

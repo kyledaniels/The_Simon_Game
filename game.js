@@ -1,5 +1,5 @@
 // Create an array to hold button colors
-var buttonColours = ["red", "blue", "green", "yellow"];
+var buttonColors = ["red", "blue", "green", "yellow"];
 
 //Create an array to hold color patterns
 // Create an array to hold usersClicked patterns
@@ -23,14 +23,14 @@ $(document).keypress(function() {
 // to determine which button is being clicked.
 $(".btn").click(function() {
 
-    var userChosenColour = $(this).attr("id");
+    var userChosenColor = $(this).attr("id");
   
-    userClickedPattern.push(userChosenColour);
+    userClickedPattern.push(userChosenColor);
   
      console.log(userClickedPattern);
 
-    playSound(userChosenColour);
-    animatePress(userChosenColour);
+    playSound(userChosenColor);
+    animatePress(userChosenColor);
     checkAnswer(userClickedPattern.length-1);
   });
 
@@ -43,7 +43,7 @@ function nextSequence() {
 
   $("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
 
-  var audio = new Audio("sounds/" + randomChosenColour + ".mp3");
+  var audio = new Audio("sounds/" + randomChosenColor + ".mp3");
   audio.play();
 }
 

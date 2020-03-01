@@ -9,6 +9,14 @@ var userClickedPattern = [];
 var started = false;
 var level = 0;
 
+$(document).keypress(function() {
+    if (!started) {
+      $("#level-title").text("Level " + level);
+      nextSequence();
+      started = true;
+    }
+  });
+
 // Select button and create a callback function
 // to determine which button is being clicked.
 $(".btn").click(function() {
